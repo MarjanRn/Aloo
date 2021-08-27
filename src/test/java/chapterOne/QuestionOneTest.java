@@ -23,4 +23,20 @@ class QuestionOneTest {
         assertEquals(false, actualResult);
     }
 
+
+    @Test
+    public void returnsTrueWhenValueIsUnique() {
+        String value = "Unique Str";
+        boolean actualResult = questionOne.isAllCharactersUnique(value);
+
+        assertEquals(true, actualResult);
+    }
+
+    @Test
+    public void returnsFalseWhenValueIsNotUnique() {
+        String value = "Unique String";
+        boolean actualResult = questionOne.isAllCharactersUnique(value);
+
+        assertEquals(false, actualResult);
+    }
 }
