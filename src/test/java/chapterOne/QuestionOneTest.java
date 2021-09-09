@@ -26,7 +26,7 @@ class QuestionOneTest {
 
     @Test
     public void returnsTrueWhenValueIsUnique() {
-        String value = "Unique Str";
+        String value = "uniqe str";
         boolean actualResult = questionOne.isAllCharactersUnique(value);
 
         assertEquals(true, actualResult);
@@ -34,7 +34,7 @@ class QuestionOneTest {
 
     @Test
     public void returnsFalseWhenValueIsNotUnique() {
-        String value = "Unique String";
+        String value = "unique string";
         boolean actualResult = questionOne.isAllCharactersUnique(value);
 
         assertEquals(false, actualResult);
