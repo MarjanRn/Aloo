@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class QuestionOneTest {
+class IsUniqueTest {
 
-    QuestionOne questionOne = new QuestionOne();
+    IsUnique isUnique = new IsUnique();
 
     @Test
     public void returnsFalseWhenValueIsNull() {
-        boolean actualResult = questionOne.isAllCharactersUnique(null);
+        boolean actualResult = isUnique.isAllCharactersUnique(null);
 
         assertEquals(false, actualResult);
     }
@@ -18,7 +18,7 @@ class QuestionOneTest {
     @Test
     public void returnsFalseWhenLengthOfValueIsOne() {
         String value = "a";
-        boolean actualResult = questionOne.isAllCharactersUnique(value);
+        boolean actualResult = isUnique.isAllCharactersUnique(value);
 
         assertEquals(false, actualResult);
     }
@@ -27,7 +27,7 @@ class QuestionOneTest {
     @Test
     public void returnsTrueWhenValueIsUnique() {
         String value = "uniqe str";
-        boolean actualResult = questionOne.isAllCharactersUnique(value);
+        boolean actualResult = isUnique.isAllCharactersUnique(value);
 
         assertEquals(true, actualResult);
     }
@@ -35,7 +35,7 @@ class QuestionOneTest {
     @Test
     public void returnsFalseWhenValueIsNotUnique() {
         String value = "unique string";
-        boolean actualResult = questionOne.isAllCharactersUnique(value);
+        boolean actualResult = isUnique.isAllCharactersUnique(value);
 
         assertEquals(false, actualResult);
     }

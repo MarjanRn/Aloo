@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class QuestionOne {
+public class IsUnique {
     public boolean isAllCharactersUnique(String value) {
         return hashSet(value) &&
                 bitVector(value) &&
